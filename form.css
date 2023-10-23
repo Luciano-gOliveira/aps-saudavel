@@ -117,15 +117,33 @@ body{
 }
 
 #login-atalho{
+    font-family: 'Be Vietnam Pro', sans-serif;
     margin: 12px;
+    padding: 12px;
     position: relative;
     top: 50%;
-    left: 3%;
+    left: -0.5%;
+}
+#cadastro-atalho{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 12px;
+    padding: 12px;
+    position: relative;
+    top: 50%;
+    left: 9%;
 }
 
 div .link-login{
     color: #1dbcec;
     text-transform: capitalize;
+    text-decoration: none;
+}
+
+div .link-cadastro{
+    color: #1dbcec;
+    text-transform: capitalize;
+    position: relative;
+    left: 12%;
     text-decoration: none;
 }
 
