@@ -13,9 +13,11 @@ body{
     height: 100vh;
     font-family: 'Poppins',sans-serif;
     background-color: #f9fbfc;
-    /* background-image: url(https://th.bing.com/th/id/OIP.koRVHGSbe2JUz4yyneQYlAHaE4?w=262&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7) ; */
+    background-image: linear-gradient(to right, rgb(9, 100, 236), rrgb(34, 156, 236) #f9fbfc);
+    background-size: 600px 100%;
+    height: 100vh;
     border-radius: 40px;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
 }
 
 .heading{
@@ -33,7 +35,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #f9fbfc;
     border-radius: 10px;
     
 }
@@ -112,6 +113,20 @@ body{
 }
 #btn button:hover{
     background: linear-gradient(-45deg, #3ed5d3,#68e69b,#11c1c7);
+    transition: 0.7s;
+}
+
+#login-atalho{
+    margin: 12px;
+    position: relative;
+    top: 50%;
+    left: 3%;
+}
+
+div .link-login{
+    color: #1dbcec;
+    text-transform: capitalize;
+    text-decoration: none;
 }
 
 @keyframes iniciar{
