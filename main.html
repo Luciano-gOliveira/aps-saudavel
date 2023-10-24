@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-sale=1.0">
+  <title>Inicio - Sauda'vell Work</title>
+</head>
+
+<body>
+
+  <div class="container">
+      <h3>Calculadora de IMC</h2>
+        <p>O IMC é reconhecido como padrão internacional para avaliar o grau de sobrepeso e obesidade. É calculado
+          dividindo o peso (em kg) pela altura ao quadrado (em metros)</p>
+  </div>
+
+  <div class="container">
+      <h3>Quanto de água devo beber?</h3>
+      <p>descubra a quantidade ideal de ingestão de água diária em poucos segundos!</p>
+  </div>
+
+  <main>
+
+    <div id="form">
+
+          <div class="title">
+            <h2>Calculadora de IMC</h2>
+            <p>Preencha abaixo com seus dados e calcule seu IMC</p>
+          </div>
+
+          <form method="get" action="main.html">
+            <!-- metodo get provisorio para testes -->
+
+            <div class="input">
+
+              <label>SEXO</label>
+
+              <label for="f">Feminino</label>
+              <input type="radio" name="sexo" id="f">
+
+              <label for="m">Masculino</label>
+              <input type="radio" name="sexo" id="m">
+
+            </div>
+
+            <div class="entradas">
+
+              <label for="idade">Idade</label>
+              <div class="input">
+
+                <input type="number" name="idade" id="idade" placeholder="Ex: 69">
+                <p>anos</p>
+
+              </div>
+
+              <label for="altura">Altura</label>
+              <div class="input">
+
+                <input class="input" type="number" name="altura" id="altura" placeholder="EX: 169">
+                <p>centrímetros (cm)</p>
+
+              </div>
+
+              <label for="peso">Peso</label>
+              <div class="input">
+
+                <input class="input" type="number" name="peso" id="peso" placeholder="EX: 69,4">
+                <p>quilogramas (kg)</p>
+
+              </div>
+
+              <div>
+                <button class="item" type="button" onclick="calcularImc()">Calcular</button>
+              </div>
+
+            </div>
+
+
+          </form>
+
+    </div>
+
+    <div id="resultado">
+
+        <h3>Resultado:</h3>
+        <p>Seu IMC é de: essa parte vai ser feita em Javascript pós cálculo</p>
+        <p>De acordo com a Organização Mundial da Saúde seu IMC é (normal, acima ou abaixo vai depender do cálculo feito com JS).</p>
+
+    </div>
+
+    <div id="tabela-imc">
+      
+        <table>
+
+            <tr>
+              <th>IMC(kg/m²)</th>
+              <th>Classificação</th>
+            </tr>
+
+            <tr>
+              <td>Menor que 16,9</td>
+              <td>Muito abaixo do peso</td>
+            </tr>
+            
+            <tr>
+              <td>17 a 18,4</td>
+              <td>Abaixo do peso</td>
+            </tr>
+
+            <tr>
+              <td>18,5 a 24,9</td>
+              <td>Peso normal</td>
+            </tr>
+
+            <tr>
+              <td>25 a 29,9</td>
+              <td>Acima do peso</td>
+            </tr>
+            
+            <tr>
+              <td>30 a 34,9</td>
+              <td>Obesidade grau I</td>
+            </tr>
+
+            <tr>
+              <td>35 a 40</td>
+              <td>Obesidade grau II</td>
+            </tr>
+
+            <tr>
+              <td>Maior que 40</td>
+              <td>Obesidade grau III</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div id="form">
+
+        <div class="title">
+          <h2>Calcular Litros em água</h2>
+          <p>Quantos litros de agua eu devo beber por dia?</p>
+        </div>
+
+        <form method="get" action="main.html">
+
+            <div class="container-agua">
+
+              <div class="entradas">
+
+                <label class="item" for="peso">Peso:</label>
+                <div class="input">
+                  <input type="number" id="peso" name="peso">
+                </div>
+
+                <label for="idade">Idade:</label>
+                <div class="input">
+                  <input class="item" type="number" id="idade" name="idade">
+                </div>
+
+                <div>
+                  <button class="item" type="button" onclick="calcularAgua()">Calcular</button>
+                </div>
+
+              </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
